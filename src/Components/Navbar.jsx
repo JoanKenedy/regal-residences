@@ -63,10 +63,14 @@ const Navbar = () => {
         </nav>
         <nav className="navbar-descktop">
           <div className="container-descktop">
-            <Link to="/">Home</Link>
-            <Link to="/nosotros">Nosotros</Link>
-            <Link to="/desarrollo">Desarrollo</Link>
-            <Link to="/financiamiento">Financiamiento</Link>
+         
+            <div className="nav-link"><Link to="/">Home</Link></div>
+            
+            <div className="nav-link"><Link to="/nosotros">Nosotros</Link></div>
+            
+            <div className="nav-link"><Link to="/desarrollo">Desarrollo</Link></div>
+           
+            <div className="nav-link"> <Link to="/financiamiento">Financiamiento</Link></div>
           </div>
         </nav>
         <div className="menu-bar" onClick={() => setIsOpen(!isOpen)}>

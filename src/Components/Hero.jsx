@@ -6,10 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 // import required modules
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectFade } from "swiper";
 import Slider1 from "../assets/slider-1.jpg";
 import Slider2 from "../assets/slider-2.jpg";
 import Slider3 from "../assets/slider-3.jpg";
@@ -33,24 +32,52 @@ const Hero = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        modules={[Autoplay, EffectFade]}
         className="mySwiper"
       >
         <SwiperSlide>
           <img src={Slider1} className="img-slider" />
           <img src={Slider5} alt="" className="img-movil" />
+          <div className="container-text">
+            <div className="text-slider">
+              <p>¡Vive la experiencia Regal!</p>
+              <a href="">Contacto</a>
+              
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Slider2} className="img-slider" />
           <img src={Slider6} alt="" className="img-movil" />
+          <div className="container-text">
+            <div className="text-slider">
+              <p>¡Construye tu futuro!</p>
+              <a href="">Contacto</a>
+             
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Slider3} className="img-slider" />
           <img src={Slider7} alt="" className="img-movil" />
+          <div className="container-text">
+            <div className="text-slider">
+              <p>Diseñado para crear momentos unicos.</p>
+              <a href="">Contacto</a>
+              
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Slider4} className="img-slider" />
           <img src={Slider8} alt="" className="img-movil" />
+          <div className="container-text">
+            <div className="text-slider">
+              <p>Diseños de vanguardia para vivir con estilo y comodidad</p>
+              <a href="">Contacto</a>
+              
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
