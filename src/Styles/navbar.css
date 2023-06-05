@@ -4,7 +4,11 @@
   left: 0;
   top: 0;
   z-index: 998;
-  
+  transition: 1s;
+}
+.navbar.back {
+  background-color: #000;
+  transition: 1s;
 }
 .container-navbar {
   width: 95%;
@@ -160,8 +164,8 @@
     align-items: center;
   }
   .logo-container img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
   }
   .menu-bar {
@@ -185,7 +189,7 @@
     gap: 40px;
     position: relative;
   }
-  .nav-link{
+  .nav-link {
     position: relative;
   }
   .nav-link a {
@@ -194,9 +198,8 @@
     color: #fff;
     text-transform: capitalize;
     font-weight: 500;
-  
   }
-  .nav-link a::after{
+  .nav-link a::after {
     content: "";
     height: 3px;
     background-color: #000;

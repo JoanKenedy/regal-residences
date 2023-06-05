@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-2.png";
 import "../Styles/navbar.css";
@@ -6,8 +6,17 @@ import "../Styles/navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  window.onscroll = function () {
+    let y = window.scrollY;
+    if (y == 300) {
+      document.getElementById("navbar").classList.add("back");
+    } else if (y < 300) {
+      document.getElementById("navbar").classList.remove("back");
+    }
+  };
+
   return (
-    <div className="navbar">
+    <div className="navbar" id="navbar">
       <div className="container-navbar">
         <div className="logo-container">
           <img src={Logo} alt="" className="logo" />
@@ -63,14 +72,22 @@ const Navbar = () => {
         </nav>
         <nav className="navbar-descktop">
           <div className="container-descktop">
-         
-            <div className="nav-link"><Link to="/">Home</Link></div>
-            
-            <div className="nav-link"><Link to="/nosotros">Nosotros</Link></div>
-            
-            <div className="nav-link"><Link to="/desarrollo">Desarrollo</Link></div>
-           
-            <div className="nav-link"> <Link to="/financiamiento">Financiamiento</Link></div>
+            <div className="nav-link">
+              <Link to="/">Home</Link>
+            </div>
+
+            <div className="nav-link">
+              <Link to="/nosotros">Nosotros</Link>
+            </div>
+
+            <div className="nav-link">
+              <Link to="/desarrollo">Desarrollo</Link>
+            </div>
+
+            <div className="nav-link">
+              {" "}
+              <Link to="/financiamiento">Financiamiento</Link>
+            </div>
           </div>
         </nav>
         <div className="menu-bar" onClick={() => setIsOpen(!isOpen)}>

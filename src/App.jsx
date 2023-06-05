@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Nosotros from "./Pages/Nosotros";
 import Desarrollo from "./Pages/Desarrollo";
 import Financiamiento from "./Pages/Financiamiento";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route element={<Desarrollo />} path="/desarrollo" />
         <Route element={<Financiamiento />} path="/financiamiento" />
       </Routes>
+      <Footer/>
     </>
   );
 }
