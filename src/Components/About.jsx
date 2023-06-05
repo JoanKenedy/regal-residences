@@ -1,5 +1,6 @@
 import React from 'react';
 import Foto from '../assets/foto-home.jpg';
+import Fts from '../assets/fts.jpg';
 import '../Styles/about.css';
 
 const About = () => {
@@ -9,10 +10,15 @@ const About = () => {
         <div className="container-about">
             <div className="item-about">
                 <h4>Conócenos</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, a laborum, repellendus blanditiis velit quibusdam maxime autem accusamus voluptatum dignissimos provident perspiciatis nobis ut amet ducimus laudantium iure reiciendis sunt.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Atque, a laborum, repellendus blanditiis 
+                  velit quibusdam maxime autem accusamus voluptatum 
+                  dignissimos provident perspiciatis nobis ut amet ducimus 
+                  laudantium iure reiciendis sunt.</p>
             </div>
             <div className="item-about">
-               <img src={Foto} alt="" />
+               <img src={Foto} alt="" className='fts-escritorio' />
+               <img src={Fts} alt="" className='fts-movil' />
             </div>
         </div>
 
