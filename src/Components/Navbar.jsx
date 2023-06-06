@@ -5,18 +5,19 @@ import "../Styles/navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isNavbar, setIsNavbar] = useState(false);
 
-  window.onscroll = function () {
-    let y = window.scrollY;
-    if (y == 300) {
-      document.getElementById("navbar").classList.add("back");
-    } else if (y < 300) {
-      document.getElementById("navbar").classList.remove("back");
+  const navbarBackground = () => {
+    if (window.scrollY > 80) {
+      setIsNavbar(true);
+    } else {
+      setIsNavbar(false);
     }
   };
+  window.addEventListener("scroll", navbarBackground);
 
   return (
-    <div className="navbar" id="navbar">
+    <div className={`navbar ${isNavbar ? "back" : ""}`} id="navbar">
       <div className="container-navbar">
         <div className="logo-container">
           <img src={Logo} alt="" className="logo" />
