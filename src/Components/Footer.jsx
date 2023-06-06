@@ -74,6 +74,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="footer-finaly">
+        <p>© 2023 Todos los derechos reservados Regal Residences.</p>
+        <p>Desarrollado por Agencia Inspiración </p>
+      </div>
     </div>
   );
 };

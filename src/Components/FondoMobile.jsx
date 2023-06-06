@@ -1,6 +1,7 @@
 import React from "react";
 import fondo from "../assets/foto5.jpg";
 import "../Styles/fondo.css";
+import ButtonContact from "./ButtonContact";
 
 const FondoMobile = () => {
   return (
@@ -13,7 +14,7 @@ const FondoMobile = () => {
             Residences
           </p>
 
-          <a href="">Más información</a>
+          <ButtonContact />
         </div>
       </div>
     </div>

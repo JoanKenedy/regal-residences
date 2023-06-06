@@ -1,9 +1,12 @@
 import React from "react";
+import HeroAbout from "../Components/HeroAbout";
+import AboutMe from "../Components/AboutMe";
 
 const Nosotros = () => {
   return (
     <div>
-      <h1>Nosotros</h1>
+      <HeroAbout />
+      <AboutMe />
     </div>
   );
 };

@@ -7,6 +7,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isNavbar, setIsNavbar] = useState(false);
 
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   const navbarBackground = () => {
     if (window.scrollY > 80) {
       setIsNavbar(true);
@@ -29,10 +33,18 @@ const Navbar = () => {
               className="fa-solid fa-xmark close"
               onClick={() => setIsOpen(!isOpen)}
             ></i>
-            <Link to="/">Home</Link>
-            <Link to="/nosotros">Nosotros</Link>
-            <Link to="/desarrollo">Desarrollo</Link>
-            <Link to="/financiamiento">Financiamiento</Link>
+            <Link to="/" onClick={() => handleClick(!isOpen)}>
+              Home
+            </Link>
+            <Link to="/nosotros" onClick={() => handleClick(!isOpen)}>
+              Nosotros
+            </Link>
+            <Link to="/desarrollo" onClick={() => handleClick(!isOpen)}>
+              Desarrollo
+            </Link>
+            <Link to="/financiamiento" onClick={() => handleClick(!isOpen)}>
+              Financiamiento
+            </Link>
           </div>
           <div className={`menu-middle ${isOpen ? "left" : ""}`}>
             <h2>Contáctanos</h2>

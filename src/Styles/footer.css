@@ -4,7 +4,7 @@
 
 .footer-footer {
   width: 100%;
-  background-color: black;
+  background-color: #2e2e2e;
   padding: 12px auto;
 }
 .sub-item-footer:nth-child(1) {
@@ -131,6 +131,20 @@ form .submit input {
   color: #fff;
   font-size: 1.1em;
 }
+.footer-finaly {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7px;
+}
+.footer-finaly p {
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 200;
+}
 
 @media (min-width: 768px) {
   .container-footer {
@@ -225,7 +239,7 @@ form .submit input {
   }
   .footer-footer {
     width: 100%;
-    background-color: black;
+
     padding: 12px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,5 +265,19 @@ form .submit input {
     color: #fff;
     font-weight: 400;
     font-size: 1.8em;
+  }
+  .footer-finaly {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px 70px;
+  }
+  .footer-finaly p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 200;
   }
 }

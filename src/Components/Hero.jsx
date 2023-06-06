@@ -17,6 +17,7 @@ import Slider5 from "../assets/slider-movil-1.jpg";
 import Slider6 from "../assets/slider-movil-2.jpg";
 import Slider7 from "../assets/slider-movil-3.jpg";
 import Slider8 from "../assets/slider-movil-4.jpg";
+import ButtonContact from "./ButtonContact";
 
 const Hero = () => {
   return (
@@ -41,8 +42,7 @@ const Hero = () => {
           <div className="container-text">
             <div className="text-slider">
               <p>¡Vive la experiencia Regal!</p>
-              <a href="">Contacto</a>
-              
+              <ButtonContact />
             </div>
           </div>
         </SwiperSlide>
@@ -52,8 +52,7 @@ const Hero = () => {
           <div className="container-text">
             <div className="text-slider">
               <p>¡Construye tu futuro!</p>
-              <a href="">Contacto</a>
-             
+              <ButtonContact />
             </div>
           </div>
         </SwiperSlide>
@@ -63,8 +62,7 @@ const Hero = () => {
           <div className="container-text">
             <div className="text-slider">
               <p>Diseñado para crear momentos unicos.</p>
-              <a href="">Contacto</a>
-              
+              <ButtonContact />
             </div>
           </div>
         </SwiperSlide>
@@ -74,8 +72,7 @@ const Hero = () => {
           <div className="container-text">
             <div className="text-slider">
               <p>Diseños de vanguardia para vivir con estilo y comodidad</p>
-              <a href="">Contacto</a>
-              
+              <ButtonContact />
             </div>
           </div>
         </SwiperSlide>

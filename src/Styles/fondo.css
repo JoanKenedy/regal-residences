@@ -38,21 +38,7 @@
   font-size: 1.5em;
   margin: 10px auto 25px;
 }
-.container-video-text a {
-  background-color: #b18904;
-  padding: 12px 10px;
-  margin: 30px auto 7px;
-  border-radius: 12px;
-  color: #fff;
-  text-decoration: none;
-  transition: 1s;
-  font-size: 1.2em;
-}
-.container-video-text a:hover {
-  background-color: #fff;
-  transition: 1s;
-  color: #000;
-}
+
 @media (min-width: 768px) {
   .fondo-mobile {
     display: none;

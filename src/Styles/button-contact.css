@@ -1,0 +1,35 @@
+.container-button {
+  width: 100%;
+}
+.container-button .button-contact {
+  display: block;
+  margin: 7px auto;
+  width: 170px;
+  background-color: #bc994b;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 1.1em;
+}
+.container-button .button-contact:hover {
+  background-color: #fff;
+  transition: 1s;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .container-button .button-contact {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    background-color: #bc994b;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+  }
+}
