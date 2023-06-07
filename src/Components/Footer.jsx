@@ -35,6 +35,7 @@ const Footer = () => {
                 <option value="325mts">325 metros</option>
                 <option value="350mts">350 metros</option>
                 <option value="400mts">400 metros</option>
+                <option value="800mts">800 metros</option>
               </select>
             </div>
             <div className="input-container">
