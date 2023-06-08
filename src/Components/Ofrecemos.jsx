@@ -15,9 +15,9 @@ const Ofrecemos = () => {
 
           <h2>Excelente Ubicación</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-            debitis iusto magni reprehenderit eum, nemo cumque tempora nostrum
-            itaque eligendi!
+            Gracias a la ubicación geográfica de Regal Residences encontrarás
+            distintos lugares para divertirte y relajarte con tus seres
+            queridos, a unos cuántos minutos de distancia.
           </p>
           <ButtonContact />
         </div>
@@ -25,22 +25,26 @@ const Ofrecemos = () => {
           <img src={Img2} alt="" />
 
           <h2>Seguridad</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            incidunt accusantium ullam at eligendi mollitia alias quaerat
-            aliquid repellendus doloribus.
-          </p>
+          <p>Vive comodo y seguro con nosotros</p>
+          <ul>
+            <li>Fraccionamiento 100% cerrado</li>
+            <li>Seguridad las 24 horas</li>
+            <li>Acceso controlado con caseta de vigilancia las 24 horas</li>
+          </ul>
+
           <ButtonContact />
         </div>
         <div className="item-ofrecemos">
           <img src={Img3} alt="" />
 
           <h2>Financiamiento</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-            dolor earum delectus saepe ipsa. Suscipit quasi veritatis vitae
-            aliquid officiis!
-          </p>
+          <p>Contamos con los mejores planes de financiamiento. </p>
+          <ul>
+            <li>Sin aval</li>
+            <li>Sin comprobar ingresos</li>
+            <li>Sin revisión de buró de crédito</li>
+          </ul>
+
           <ButtonContact />
         </div>
       </div>

@@ -10,8 +10,7 @@ const FondoMobile = () => {
         <div className="container-video-text">
           <h2>¡Vive tus sueños en Tequesquitengo!</h2>
           <p>
-            Construimos tu futuro, construimos tu casa. <br /> Conoce Regal
-            Residences
+            Construye tu futuro en un lugar exclusivo, conoce Regal Residences
           </p>
 
           <ButtonContact />

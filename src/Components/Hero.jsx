@@ -10,13 +10,14 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Autoplay, EffectFade } from "swiper";
 import Slider1 from "../assets/slider-1.jpg";
-import Slider2 from "../assets/slider-2.jpg";
+import Slider2 from "../assets/slider5.jpeg";
 import Slider3 from "../assets/slider-3.jpg";
 import Slider4 from "../assets/slider-4.jpg";
 import Slider5 from "../assets/slider-movil-1.jpg";
-import Slider6 from "../assets/slider-movil-2.jpg";
+import Slider6 from "../assets/img10.jpeg";
 import Slider7 from "../assets/slider-movil-3.jpg";
 import Slider8 from "../assets/slider-movil-4.jpg";
+
 import ButtonContact from "./ButtonContact";
 
 const Hero = () => {

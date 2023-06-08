@@ -4,7 +4,11 @@ import "../Styles/button-contact.css";
 function ButtonContact() {
   return (
     <div className="container-button">
-      <a href="" className="button-contact">
+      <a
+        href="https://api.whatsapp.com/send?phone=527341373382"
+        target="_blank"
+        className="button-contact"
+      >
         Contáctanos
       </a>
     </div>

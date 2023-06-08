@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/about-me.css";
 import team from "../assets/team.jpg";
-import team2 from "../assets/team2.jpg";
+
 import ButtonContact from "./ButtonContact";
 
 const AboutMe = () => {

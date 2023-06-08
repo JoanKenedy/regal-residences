@@ -49,22 +49,24 @@ const Navbar = () => {
           <div className={`menu-middle ${isOpen ? "left" : ""}`}>
             <h2>Contáctanos</h2>
             <div className="menu-middle-submenu">
-              <a href="">
+              <a
+                href="https://api.whatsapp.com/send?phone=527341373382"
+                target="_blank"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Información</p>
+              </a>
+              <a href="tel:5536697725" target="_blank">
                 <i className="fa-solid fa-phone"></i>
                 <p>5536697725</p>
               </a>
-              <a href="">
+              <a href="tel:5581459476" target="_blank">
                 <i className="fa-solid fa-phone"></i>
                 <p>5581459476</p>
               </a>
-              <a href="">
+              <a href="tel:5630220591" target="_blank">
                 <i className="fa-solid fa-phone"></i>
                 <p>5630220591</p>
-              </a>
-
-              <a href="">
-                <i className="fa-solid fa-pen"></i>
-                <p>Información</p>
               </a>
             </div>
           </div>

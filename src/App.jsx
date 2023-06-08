@@ -6,6 +6,7 @@ import Nosotros from "./Pages/Nosotros";
 import Desarrollo from "./Pages/Desarrollo";
 import Financiamiento from "./Pages/Financiamiento";
 import Footer from "./Components/Footer";
+import Botones from "./Components/Botones";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route element={<Desarrollo />} path="/desarrollo" />
         <Route element={<Financiamiento />} path="/financiamiento" />
       </Routes>
-      <Footer/>
+      <Botones />
+      <Footer />
     </>
   );
 }

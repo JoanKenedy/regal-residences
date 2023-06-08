@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #bc994b;
+  background-color: #b18904;
   padding: 20px;
 }
 .item-amenidades:nth-child(1) {
@@ -78,7 +78,7 @@
     gap: 15px;
   }
   .item-amenidades {
-    background-color: #bc994b;
+    background-color: #b18904;
     padding: 20px;
     border-radius: 12px;
   }

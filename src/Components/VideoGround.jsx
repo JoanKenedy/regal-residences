@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/video.css";
 import Video from "../assets/background.mp4";
+import ButtonContact from "./ButtonContact";
 
 const VideoGround = () => {
   return (
@@ -17,11 +18,10 @@ const VideoGround = () => {
         <div className="container-video-text">
           <h2>¡Vive tus sueños en Tequesquitengo!</h2>
           <p>
-            Construimos tu futuro, construimos tu casa. <br /> Conoce Regal
-            Residences
+            Construye tu futuro en un lugar exclusivo, conoce Regal Residences
           </p>
 
-          <a href="">Más información</a>
+          <ButtonContact />
         </div>
       </div>
     </div>
