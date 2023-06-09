@@ -56,7 +56,36 @@
   color: aliceblue;
   font-weight: 300;
 }
+.amenidades a {
+  display: block;
+  margin: 20px auto 5px auto;
+  width: 170px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  color: #2e2e2e;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 1.1em;
+  transition: 1s;
+}
+.amenidades a:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
 @media (min-width: 768px) {
+  .amenidades a {
+    display: block;
+    margin: 30px auto 5px auto;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    color: #2e2e2e;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+  }
   .amenidades {
     width: 100%;
     background-color: #2e2e2e;

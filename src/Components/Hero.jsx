@@ -42,7 +42,7 @@ const Hero = () => {
           <img src={Slider5} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
-              <p>¡Vive la experiencia Regal!</p>
+              <p>¡Terrenos en Tequesquitengo!</p>
               <ButtonContact />
             </div>
           </div>
@@ -52,7 +52,7 @@ const Hero = () => {
           <img src={Slider6} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
-              <p>¡Construye tu futuro!</p>
+              <p>¡Compra tu terreno, Construye tu futuro!</p>
               <ButtonContact />
             </div>
           </div>

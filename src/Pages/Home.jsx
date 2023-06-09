@@ -5,6 +5,7 @@ import GaleryHome from "../Components/GaleryHome";
 import VideoGround from "../Components/VideoGround";
 import FondoMobile from "../Components/FondoMobile";
 import Amenidades from "../Components/Amenidades";
+import RenderFotos from "../Components/RenderFotos";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <About />
       <Amenidades />
+      <RenderFotos />
       <GaleryHome />
       <FondoMobile />
       <VideoGround />

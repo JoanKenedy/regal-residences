@@ -11,6 +11,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleNabvar = () => {
+    setIsNavbar(!isNavbar);
+  };
+
   const navbarBackground = () => {
     if (window.scrollY > 80) {
       setIsNavbar(true);
@@ -73,14 +77,17 @@ const Navbar = () => {
           <div className={`menu-down ${isOpen ? "up" : ""}`} id="menu-down">
             <h2>Síguenos</h2>
             <div className="redes-menu-down">
-              <a href="">
+              <a
+                href="https://www.facebook.com/Regal.ResidencesMX"
+                target="_blank"
+              >
                 <i class="fa-brands fa-facebook"></i>
               </a>
-              <a href="">
+              <a
+                href="https://instagram.com/regal.residencesmx?igshid=ZDc4ODBmNjlmNQ=="
+                target="_blank"
+              >
                 <i class="fa-brands fa-square-instagram"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-youtube"></i>
               </a>
             </div>
           </div>
@@ -88,18 +95,20 @@ const Navbar = () => {
         <nav className="navbar-descktop">
           <div className="container-descktop">
             <div className="nav-link">
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setIsNavbar(!isNavbar)}>
+                Home
+              </Link>
             </div>
 
-            <div className="nav-link">
+            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
               <Link to="/nosotros">Nosotros</Link>
             </div>
 
-            <div className="nav-link">
+            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
               <Link to="/desarrollo">Desarrollo</Link>
             </div>
 
-            <div className="nav-link">
+            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
               {" "}
               <Link to="/financiamiento">Financiamiento</Link>
             </div>

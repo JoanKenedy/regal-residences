@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/amenidades.css";
 import area1 from "../assets/amenidad1.png";
 import area2 from "../assets/amenidad2.png";
@@ -14,29 +15,30 @@ const Amenidades = () => {
       <div className="container-amenidades">
         <div className="item-amenidades">
           <img src={area1} alt="" />
-          <h2>Pista de Jogging</h2>
+          <h2>Casa Club</h2>
         </div>
         <div className="item-amenidades">
           <img src={area2} alt="" />
-          <h2>Juegos Infantiles</h2>
+          <h2>Gimnasio</h2>
         </div>
         <div className="item-amenidades">
           <img src={area3} alt="" />
-          <h2>Asadores</h2>
+          <h2> Albercas con playas</h2>
         </div>
         <div className="item-amenidades">
           <img src={area4} alt="" />
-          <h2>Palapas</h2>
+          <h2>Áreas verdes</h2>
         </div>
         <div className="item-amenidades">
           <img src={area5} alt="" />
-          <h2>Cascada</h2>
+          <h2>Juegos infantiles</h2>
         </div>
         <div className="item-amenidades">
           <img src={area6} alt="" />
           <h2>Área para mascotas</h2>
         </div>
       </div>
+      <Link to="/amenidades">Ver más</Link>
     </div>
   );
 };

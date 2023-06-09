@@ -63,14 +63,17 @@ const Footer = () => {
         <div className="sub-item-footer">
           <h2>Síguenos</h2>
           <div className="redes-footer">
-            <a href="">
+            <a
+              href="https://www.facebook.com/Regal.ResidencesMX"
+              target="_blank"
+            >
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="">
+            <a
+              href="https://instagram.com/regal.residencesmx?igshid=ZDc4ODBmNjlmNQ=="
+              target="_blank"
+            >
               <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>

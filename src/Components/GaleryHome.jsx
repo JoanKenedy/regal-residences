@@ -17,7 +17,7 @@ import foto13 from "../assets/slider-movil-4.jpg";
 const GaleryHome = () => {
   return (
     <div className="galery">
-      <h2>Desarrollo</h2>
+      <h2>Atracciones y Lugares de interes</h2>
       <div className="container-galery">
         <div className="item-galery">
           <img src={foto1} alt="" />
