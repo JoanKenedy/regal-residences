@@ -12,6 +12,7 @@ const RenderFotos = () => {
   return (
     <div className="render-fotos">
       <h2>Nuestro Desarrollo</h2>
+      <p>Imagenes de render</p>
       <div className="container-render-fotos">
         <div className="item-render-fotos">
           <img src={Render1} alt="" />
