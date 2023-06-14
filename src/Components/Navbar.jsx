@@ -43,8 +43,8 @@ const Navbar = () => {
             <Link to="/nosotros" onClick={() => handleClick(!isOpen)}>
               Nosotros
             </Link>
-            <Link to="/desarrollo" onClick={() => handleClick(!isOpen)}>
-              Desarrollo
+            <Link to="/amenidades" onClick={() => handleClick(!isOpen)}>
+              Amenidades
             </Link>
             <Link to="/financiamiento" onClick={() => handleClick(!isOpen)}>
               Financiamiento
@@ -105,12 +105,16 @@ const Navbar = () => {
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <Link to="/desarrollo">Desarrollo</Link>
+              <Link to="/amenidades">Amenidades</Link>
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              {" "}
               <Link to="/financiamiento">Financiamiento</Link>
+            </div>
+            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
+              <a href="tel:5630220591" className="btn-header-contacto">
+                5630220591
+              </a>
             </div>
           </div>
         </nav>

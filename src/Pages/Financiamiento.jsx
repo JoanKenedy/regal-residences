@@ -1,9 +1,10 @@
 import React from "react";
+import "../Styles/financiamiento.css";
 
 const Financiamiento = () => {
   return (
-    <div>
-      <h1>Financiamiento</h1>
+    <div className="construction">
+      <h2>Construcción...</h2>
     </div>
   );
 };

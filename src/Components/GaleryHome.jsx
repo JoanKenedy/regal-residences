@@ -83,7 +83,7 @@ const GaleryHome = () => {
 
   const openModal = (e) => {
     setIsModal(!isModal);
-    console.log(`es el boton con el id ${e.target.id}`);
+
     let evento = e.target.id;
     modalOpen(evento);
   };
@@ -98,7 +98,7 @@ const GaleryHome = () => {
         <h2 id="title-modal">${texto.title}<h2/>
         <p id="texto-modal">${texto.info}<p/>
         <a
-            href="https://api.whatsapp.com/send?phone=527341373382"
+            href="https://api.whatsapp.com/send?phone=525630220591"
             target="_blank"
             className="button-contact"
           >
