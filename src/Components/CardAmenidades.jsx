@@ -1,58 +1,79 @@
 import React, { useState } from "react";
 import "../Styles/card-amenidades.css";
+import Close from "../assets/cerca.png";
 
 const CardAmenidades = () => {
   const infoAmenidades = [
     {
       id: 1,
-      title: "Casa club",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Sala de usos multiples",
+      info: " La sala de usos múltiples es un espacio informal pensado para que los usuarios puedan conversar, relajarse, leer o utilizar las computadoras. Recuerda que en Regal Residences pensamos en tu comodidad y bienestar.",
     },
     {
       id: 2,
-      title: "Gimnasio",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Pista de Jogging",
+      info: " Por que nos gusta consertirte, construimos para ti una pista de jogging pensada para hacer tus actividades al aire libre y cuides de tu salud, sin salir de nuestro complejo. Haz ejercicio dentro de nuestras instalaciones, todo esta pensado en ti y tu familia.",
     },
     {
       id: 3,
       title: "Áreas verdes",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      info: "Espacios donde podrás relajarte, meditar, pasear o simplemente darte un espacio contigo mismo.Imagina dar un paseo por nuestras áreas verdes y darte cuenta que fue una gran desicion confiar en Regal Residences.",
     },
     {
       id: 4,
-      title: "Alberca con playa",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Alberca ",
+      info: "Siempre una de las atracciones en un lugar de clase , será tener alberca, nuestra  piscina construida con materiales de calidad y acabado que incite a pasar un momento agradable y placentero.",
     },
 
     {
       id: 5,
       title: "Juegos infantiles",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      info: "Tus pequeños tendran un lugar donde divertirse y que mejor que un lugar de fácil acceso , tranquilo y sobre todo seguro. Que mejor regalo que ver a tus niños felices.Esto te lo da Regal Residences.",
     },
     {
       id: 6,
       title: "Área para mascotas",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      info: " Tambien tomamos en cuenta a nuestros amigos de cuatro patas, ellos tambien merecen ser consentidos y ser tratados de la mejor manera, por eso construimos un lugar especial para ellos, donde podras estar con ellos sin problema alguno. Nuestra área para mascotas esta equipado para que tus mascotas retocen de felicidad.",
     },
     {
       id: 7,
-      title: "Terraza",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Jacuzzi",
+      info: " Si de momento especial y de completa relajación se habla, hay lugares que se nos vienen rapido a la mente , uno de ellos es el jacuzzi, en donde puedes conectar contigo mismo, mientras el agua burbujeante te da un sublime masaje. ¡Dejate consentir por nosotros!.",
     },
     {
       id: 8,
-      title: "Cafetería",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Chapoteadero",
+      info: "Construido para personas que aun no saben nadar o que apenas van empezando y mejor aun para tus niños, que les gusta divertirse con el agua , ya que pensamos en tu seguridad y la de tus pequeñines.",
     },
     {
       id: 9,
-      title: "Asadores",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Regaderas",
+      info: " Regaderas de la mayor calidad y durabilidad, para que te duches despues de darte un chapuzon en la alberca o simplemente darte un baño por esos dias tan calurosos. Nuestras amenidades son de gran calidad y estilo.",
     },
     {
       id: 10,
-      title: "Jacuzzi",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cumque hic sit ipsa ex consequuntur iusto consectetur, quasi neque ducimus culpa beatae labore! Omnis suscipit voluptates veniam error animi dicta.",
+      title: "Baños",
+      info: "  Nuestros baños cuentan con la mayor tecnología hidrosanitaria,   con materiales de ultima generación y con acabados finos. Todo diseñado para darte una experiencia y confianza agradable a simple vista.",
+    },
+    {
+      id: 11,
+      title: "Resturante Bar",
+      info: "Nuestro restaurante bar, esta equipado con todo lo necesario para que deleitemos tu paladar con nuestra comida regional o platillos del menu. Tambien fue diseñado con los mejores materiales y acabados de lujo y con ello poder crear ese momento unico. Ven con tu familia o amigos y vive la experiencia Regal Residences.",
+    },
+    {
+      id: 12,
+      title: "Vestidores",
+      info: "Contamos con vestidores con excelente higiene, que hacen que te sientas tranquilo y muy seguro al estar ahi.En Regal Residences todo esta diseñado por personas altamente capacitadas y asi poder entregarte el mejor servicio e instalaciones que hallas visto. ",
+    },
+    {
+      id: 13,
+      title: "Palapas",
+      info: " Las palapas tenían mucha similitud con los hogares indígenas que le daban vida al territorio mexicano en la época precolonial, pero con materiales que permitían que el aire fluyera completamente, por ese motivo se adaptaron muy bien a México, sobre todo a las costas. Y ahora las adaptamos para ti en nuestro complejo.",
+    },
+    {
+      id: 14,
+      title: "Estacionamiento",
+      info: "No podia faltar una de las amenidades que es muy requerida en estos tiempos, para todas aquellas personas que cuentan con carro o que la familia los visita y no tiene donde dejar su coche.Y no te preocupes Regal cuenta con seguridad las 24 horas para que estes tranquilo.",
     },
   ];
   const [isAmenidad, setIsAmenidad] = useState(false);
@@ -93,14 +114,15 @@ const CardAmenidades = () => {
       <div className="container-card-amenidades">
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Casa Club</h2>
+            <h2>Sala de usos multiples</h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Casa Club</h2>
+                <h2>Sala de usos multiples</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  La sala de usos múltiples es un espacio informal pensado para
+                  que los usuarios puedan conversar, relajarse, leer o utilizar
+                  las computadoras. Recuerda que en Regal Residences pensamos en
+                  tu comodidad y bienestar.
                 </p>
               </div>
             </div>
@@ -115,14 +137,16 @@ const CardAmenidades = () => {
         </div>
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Gimnasio</h2>
+            <h2>Pista de jogging</h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Gimnasio</h2>
+                <h2>Pista de jogging</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Por que nos gusta consertirte, construimos para ti una pista
+                  de jogging pensada para hacer tus actividades al aire libre y
+                  cuides de tu salud, sin salir de nuestro complejo. Haz
+                  ejercicio dentro de nuestras instalaciones, todo esta pensado
+                  en ti y tu familia.
                 </p>
               </div>
             </div>
@@ -142,9 +166,10 @@ const CardAmenidades = () => {
               <div className="text-img">
                 <h2>Áreas verdes</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Espacios donde podrás relajarte, meditar, pasear o simplemente
+                  darte un espacio contigo mismo. Imagina dar un paseo por
+                  nuestras áreas verdes y darte cuenta que fue una gran desicion
+                  confiar en Regal Residences.
                 </p>
               </div>
             </div>
@@ -159,14 +184,15 @@ const CardAmenidades = () => {
         </div>
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Alberca con playa</h2>
+            <h2>Alberca </h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Alberca con playa</h2>
+                <h2>Alberca </h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Siempre una de las atracciones en un lugar de clase , será
+                  tener alberca, nuestra piscina construida con materiales de
+                  calidad y acabado que incite a pasar un momento agradable y
+                  placentero.
                 </p>
               </div>
             </div>
@@ -186,9 +212,10 @@ const CardAmenidades = () => {
               <div className="text-img">
                 <h2>Juegos infantiles</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Tus pequeños tendran un lugar donde divertirse y que mejor que
+                  un lugar de fácil acceso , tranquilo y sobre todo seguro. Que
+                  mejor regalo que ver a tus niños felices. Esto te lo da Regal
+                  Residences.
                 </p>
               </div>
             </div>
@@ -208,9 +235,12 @@ const CardAmenidades = () => {
               <div className="text-img">
                 <h2>Área para mascotas</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Tambien tomamos en cuenta a nuestros amigos de cuatro patas,
+                  ellos tambien merecen ser consentidos y ser tratados de la
+                  mejor manera, por eso construimos un lugar especial para
+                  ellos, donde podras estar con ellos sin problema alguno.
+                  Nuestra área para mascotas esta equipado para que tus mascotas
+                  retocen de felicidad.
                 </p>
               </div>
             </div>
@@ -225,14 +255,16 @@ const CardAmenidades = () => {
         </div>
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Terraza</h2>
+            <h2>Jacuzzi</h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Terraza</h2>
+                <h2>Jacuzzi</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Si de momento especial y de completa relajación se habla, hay
+                  lugares que se nos vienen rapido a la mente , uno de ellos es
+                  el jacuzzi, en donde puedes conectar contigo mismo, mientras
+                  el agua burbujeante te da un sublime masaje. ¡Dejate consentir
+                  por nosotros!.
                 </p>
               </div>
             </div>
@@ -247,14 +279,15 @@ const CardAmenidades = () => {
         </div>
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Cafetería</h2>
+            <h2>Chapoteadero</h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Cafetería</h2>
+                <h2>Chapoteadero</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Construido para personas que aun no saben nadar o que apenas
+                  van empezando y mejor aun para tus niños, que les gusta
+                  divertirse con el agua , ya que pensamos en tu seguridad y la
+                  de tus pequeñines.
                 </p>
               </div>
             </div>
@@ -269,14 +302,15 @@ const CardAmenidades = () => {
         </div>
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Asadores</h2>
+            <h2>Regaderas</h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Asadores</h2>
+                <h2>Regaderas</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Regaderas de la mayor calidad y durabilidad, para que te
+                  duches despues de darte un chapuzon en la alberca o
+                  simplemente darte un baño por esos dias tan calurosos.
+                  Nuestras amenidades son de gran calidad y estilo.
                 </p>
               </div>
             </div>
@@ -292,14 +326,15 @@ const CardAmenidades = () => {
 
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Jacuzzis</h2>
+            <h2>Baños</h2>
             <div className="container-text-img">
               <div className="text-img">
-                <h2>Jacuzzis</h2>
+                <h2>Baños</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat magnam ipsam sint ratione quas sunt repudiandae
-                  accusantium quos suscipit id, quod eos repellat! Minima, a!
+                  Nuestros baños cuentan con la mayor tecnología hidrosanitaria,
+                  con materiales de ultima generación y con acabados finos. Todo
+                  diseñado para darte una experiencia y confianza agradable a
+                  simple vista.
                 </p>
               </div>
             </div>
@@ -312,12 +347,116 @@ const CardAmenidades = () => {
             Saber más
           </button>
         </div>
+        <div className="item-card-amenidades">
+          <div className="card-image">
+            <h2>Restaurante Bar</h2>
+            <div className="container-text-img">
+              <div className="text-img">
+                <h2>Restaurante Bar</h2>
+                <p>
+                  Nuestro restaurante bar, esta equipado con todo lo necesario
+                  para que deleitemos tu paladar con nuestra comida regional o
+                  platillos del menu. Tambien fue diseñado con los mejores
+                  materiales y acabados de lujo y con ello poder crear ese
+                  momento unico. Ven con tu familia o amigos y vive la
+                  experiencia Regal Residences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            className="btn-amenidades"
+            id="11"
+            onClick={(e) => handleAmenidad(e, !isAmenidad)}
+          >
+            Saber más
+          </button>
+        </div>
+        <div className="item-card-amenidades">
+          <div className="card-image">
+            <h2>Vestidores</h2>
+            <div className="container-text-img">
+              <div className="text-img">
+                <h2>Vestidores</h2>
+                <p>
+                  Contamos con vestidores con excelente higiene, que hacen que
+                  te sientas tranquilo y muy seguro al estar ahi.En Regal
+                  Residences todo esta diseñado por personas altamente
+                  capacitadas y asi poder entregarte el mejor servicio e
+                  instalaciones que hallas visto.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            className="btn-amenidades"
+            id="12"
+            onClick={(e) => handleAmenidad(e, !isAmenidad)}
+          >
+            Saber más
+          </button>
+        </div>
+        <div className="item-card-amenidades">
+          <div className="card-image">
+            <h2>Palapas</h2>
+            <div className="container-text-img">
+              <div className="text-img">
+                <h2>Palapas</h2>
+                <p>
+                  Las palapas tenían mucha similitud con los hogares indígenas
+                  que le daban vida al territorio mexicano en la época
+                  precolonial, pero con materiales que permitían que el aire
+                  fluyera completamente, por ese motivo se adaptaron muy bien a
+                  México, sobre todo a las costas. Y ahora las adaptamos para ti
+                  en nuestro complejo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            className="btn-amenidades"
+            id="13"
+            onClick={(e) => handleAmenidad(e, !isAmenidad)}
+          >
+            Saber más
+          </button>
+        </div>
+        <div className="item-card-amenidades">
+          <div className="card-image">
+            <h2>Estacionamiento</h2>
+            <div className="container-text-img">
+              <div className="text-img">
+                <h2>Estacionamiento</h2>
+                <p>
+                  No podia faltar una de las amenidades que es muy requerida en
+                  estos tiempos, para todas aquellas personas que cuentan con
+                  carro o que la familia los visita y no tiene donde dejar su
+                  coche. Y no te preocupes Regal cuenta con seguridad las 24
+                  horas para que estes tranquilo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            className="btn-amenidades"
+            id="14"
+            onClick={(e) => handleAmenidad(e, !isAmenidad)}
+          >
+            Saber más
+          </button>
+        </div>
       </div>
       <div
         className={`modal-amenidades ${isAmenidad ? "amenidades-open" : ""}`}
         id="modal-amenidades"
         onClick={() => setIsAmenidad(!isAmenidad)}
       >
+        <img
+          src={Close}
+          alt=""
+          className="close"
+          onClick={() => setIsAmenidad(false)}
+        />
         <div
           className="container-modal-amenidades"
           id="container-modal-amenidades"

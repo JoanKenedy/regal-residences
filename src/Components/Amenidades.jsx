@@ -14,16 +14,12 @@ const Amenidades = () => {
       <h2>Amenidades</h2>
       <div className="container-amenidades">
         <div className="item-amenidades">
-          <img src={area1} alt="" />
-          <h2>Casa Club</h2>
-        </div>
-        <div className="item-amenidades">
           <img src={area2} alt="" />
-          <h2>Gimnasio</h2>
+          <h2>Pista de jogging</h2>
         </div>
         <div className="item-amenidades">
           <img src={area3} alt="" />
-          <h2> Albercas con playas</h2>
+          <h2> Alberca</h2>
         </div>
         <div className="item-amenidades">
           <img src={area4} alt="" />
@@ -36,6 +32,10 @@ const Amenidades = () => {
         <div className="item-amenidades">
           <img src={area6} alt="" />
           <h2>Área para mascotas</h2>
+        </div>
+        <div className="item-amenidades">
+          <img src={area1} alt="" />
+          <h2>Restaurante bar</h2>
         </div>
       </div>
       <Link to="/amenidades">Ver más</Link>

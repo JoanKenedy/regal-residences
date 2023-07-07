@@ -18,22 +18,63 @@
 }
 .item-card-amenidades .card-image {
   position: relative;
-  background-image: url(../assets/fondoCard.jpg);
+  background-image: url(../assets/sala.jpg);
   background-size: 200%;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  animation: bigImage3 10s infinite linear alternate;
+  background-position: center;
   width: 100%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 7px;
 }
+.item-card-amenidades:nth-child(2) .card-image {
+  background-image: url(../assets/jogging.jpg);
+}
+.item-card-amenidades:nth-child(3) .card-image {
+  background-image: url(../assets/areas-verdes.jpg);
+}
+.item-card-amenidades:nth-child(4) .card-image {
+  background-image: url(../assets/alberca.jpg);
+}
+.item-card-amenidades:nth-child(5) .card-image {
+  background-image: url(../assets/juego-infantiles.jpg);
+}
+.item-card-amenidades:nth-child(6) .card-image {
+  background-image: url(../assets/area-mascotas.jpg);
+}
+.item-card-amenidades:nth-child(7) .card-image {
+  background-image: url(../assets/jacuzzi.jpg);
+}
+.item-card-amenidades:nth-child(8) .card-image {
+  background-image: url(../assets/chapoteadero.jpg);
+}
+.item-card-amenidades:nth-child(9) .card-image {
+  background-image: url(../assets/regaderas.jpg);
+}
+.item-card-amenidades:nth-child(10) .card-image {
+  background-image: url(../assets/baños.jpg);
+}
+.item-card-amenidades:nth-child(11) .card-image {
+  background-image: url(../assets/restaurante-bar.jpg);
+}
+.item-card-amenidades:nth-child(12) .card-image {
+  background-image: url(../assets/vestidores.jpg);
+}
+.item-card-amenidades:nth-child(13) .card-image {
+  background-image: url(../assets/palapas.jpg);
+}
+.item-card-amenidades:nth-child(14) .card-image {
+  background-image: url(../assets/estacionamiento.jpg);
+}
+
 .card-image h2 {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
 }
 @keyframes bigImage3 {
@@ -67,6 +108,7 @@
 .container-text-img {
   display: none;
 }
+
 .modal-amenidades {
   width: 100%;
   height: 100vh;
@@ -88,7 +130,7 @@
 .container-modal-amenidades {
   background-color: #3c115e;
   width: 90%;
-  height: 90vh;
+  height: 80vh;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -117,6 +159,14 @@
   padding: 7px;
   border-radius: 7px;
 }
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
 @media (min-width: 768px) {
   .card-amenidades {
     width: 100%;
@@ -138,14 +188,14 @@
   }
   .item-card-amenidades .card-image {
     position: relative;
-    background-image: url(../assets/fondoCard.jpg);
-    background-size: 200%;
+    background-image: url(../assets/sala.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-    animation: bigImage3 10s infinite linear alternate;
+
     width: 100%;
-    height: 350px;
+    height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
