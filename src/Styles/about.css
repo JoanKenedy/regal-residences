@@ -8,12 +8,17 @@
   margin-top: 10px;
 }
 .container-about {
-  width: 90%;
+  width: 100%;
   margin: 20px auto 10px auto;
   position: relative;
-  height: 570px;
-  overflow: hidden;
+  padding: 5%;
 }
+
+.video-back{
+  max-width: 100%;
+  border-radius: 12px;
+}
+
 .item-about h4 {
   font-size: 1.3em;
   color: #151515;
@@ -57,7 +62,7 @@
     margin: 0px auto 5px auto;
   }
   .container-about {
-    width: 80%;
+    width: 90%;
     margin: 25px auto;
     position: relative;
     height: 450px;
