@@ -1,8 +1,6 @@
 import React from "react";
-import Foto from "../assets/foto-home.jpg";
-import Fts from "../assets/fts.jpg";
 import ReactPlayer from "react-player";
-import video from "../assets/video_dron_regal.mp4";
+
 import "../Styles/about.css";
 
 const About = () => {
@@ -10,7 +8,7 @@ const About = () => {
     <div className="about">
       <h2>¿Quienes Somos?</h2>
       <div className="container-about">
-        {/*<div className="item-about">
+        <div className="item-about">
           <h4>Conócenos</h4>
           <p>
             Somos un desarrollo que ofrece terrenos residenciales con espacios
@@ -21,17 +19,17 @@ const About = () => {
             desarrollo.
           </p>
         </div>
-        <div className="item-about">
-          <img src={Foto} alt="" className="fts-escritorio" />
-          <img src={Fts} alt="" className="fts-movil" />
-        </div>*/}
-        <video
-        className="video-back"
-          src={video}
-          autoPlay
-          loop
-          controls
-        ></video>
+        <div className="item-about player-wrapper">
+          <ReactPlayer
+            url={"https://vimeo.com/839896157?share=copy"}
+            autoplay
+            controls={true}
+            loop
+            width="100%"
+            height="100%"
+            className="react-player"
+          />
+        </div>
       </div>
     </div>
   );
